@@ -11,7 +11,7 @@ import {
 import { martialArts } from "../../data/martialArts";
 import styles from "./StatsChart.module.css";
 
-const CHART_DISCIPLINES = ["boxing", "muay-thai", "bjj", "wrestling", "judo"];
+const CHART_DISCIPLINES = ["boxing", "muay-thai", "bjj", "wrestling", "mma"];
 
 const chartData = CHART_DISCIPLINES.map((id) => {
   const art = martialArts.find((m) => m.id === id);
