@@ -5,7 +5,7 @@ different martial arts — built as a frontend engineering portfolio project.
 
 🔗 **[Live Demo](your-deployed-link-here)**
 
-![MartialHub screenshot](./src/assets/images/sections/HeroImage.jpeg)
+![MartialHub screenshot](./src/assets/images/sections/screenshot.png)
 
 ## About
 
