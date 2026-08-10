@@ -1,0 +1,85 @@
+.header {
+  max-width: 42rem;
+  margin-bottom: 3.5rem;
+  padding-top: 3rem;
+}
+
+.header h1 {
+  font-size: clamp(2.25rem, 5vw, 3.25rem);
+  margin-top: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.header p {
+  color: var(--color-text-muted);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.timeline {
+  max-width: 46rem;
+  margin: 0 auto;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 1.75rem 1fr;
+  gap: 1.5rem;
+}
+
+.marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dot {
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+  box-shadow: 0 0 0 4px rgba(245, 158, 11, 0.15);
+  flex-shrink: 0;
+  margin-top: 0.4rem;
+}
+
+.line {
+  flex: 1;
+  width: 2px;
+  background-color: var(--color-border-strong);
+  margin: 0.5rem 0;
+}
+
+.card {
+  padding-bottom: 2.5rem;
+}
+
+.year {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 0.4rem;
+}
+
+.title {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+  transition: color var(--transition-base);
+}
+
+.title:hover {
+  color: var(--color-accent);
+}
+
+.note {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  max-width: 34rem;
+}

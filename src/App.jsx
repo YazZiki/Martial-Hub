@@ -7,6 +7,7 @@ import MartialArtDetails from "./pages/MartialArtDetails/MartialArtDetails"
 import Compare from "./pages/compare/Compare";
 import Quiz from "./pages/Quiz/Quiz"
 import HallOfFame from "./pages/HallOfFame/HallOfFame";
+import TimeLine from "./pages/Timeline/Timeline"
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path="/compare" element={<Compare/>}/>
         <Route path="/quiz" element={<Quiz/>}/>
         <Route path="/hall-of-fame" element={<HallOfFame/>}/>
+        <Route path="timeline" element={<TimeLine/>}/>
 
       </Routes>
     </main>
