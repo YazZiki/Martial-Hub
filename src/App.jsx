@@ -6,6 +6,7 @@ import MartialArts from "./pages/MartialArts/MartialArts"
 import MartialArtDetails from "./pages/MartialArtDetails/MartialArtDetails"
 import Compare from "./pages/compare/Compare";
 import Quiz from "./pages/Quiz/Quiz"
+import HallOfFame from "./pages/HallOfFame/HallOfFame";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path="/martial-arts/:id" element={<MartialArtDetails/>}/>
         <Route path="/compare" element={<Compare/>}/>
         <Route path="/quiz" element={<Quiz/>}/>
+        <Route path="/hall-of-fame" element={<HallOfFame/>}/>
 
       </Routes>
     </main>
