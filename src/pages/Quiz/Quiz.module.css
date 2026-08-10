@@ -1,0 +1,111 @@
+.header {
+  max-width: 42rem;
+  margin: 3rem auto 2rem;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: clamp(2.25rem, 5vw, 3rem);
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.header p {
+  color: var(--color-text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+}
+
+.progressTrack {
+  max-width: 32rem;
+  height: 0.35rem;
+  margin: 0 auto 3rem;
+  background-color: var(--color-surface);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background-color: var(--color-accent);
+  border-radius: 999px;
+}
+
+.questionCard {
+  max-width: 40rem;
+  margin: 0 auto;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem 2rem;
+  text-align: center;
+}
+
+.questionCard h2 {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.optionBtn {
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border-strong);
+  color: var(--color-text);
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.95rem;
+  text-align: left;
+  transition: border-color var(--transition-base), background-color var(--transition-base), transform var(--transition-base);
+}
+
+.optionBtn:hover {
+  border-color: var(--color-accent);
+  background-color: rgba(245, 158, 11, 0.06);
+  transform: translateX(4px);
+}
+
+.resultsHeader {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: 60rem;
+  margin: 0 auto 2rem;
+}
+
+.resultsHeader h2 {
+  font-size: 1.75rem;
+}
+
+.resultsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.resultItem {
+  position: relative;
+}
+
+.matchBadge {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .resultsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
